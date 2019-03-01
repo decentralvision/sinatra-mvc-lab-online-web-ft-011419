@@ -7,4 +7,5 @@ class App < Sinatra::Base
   post '/' do
     erb :pig_latin
   end
+
 end
