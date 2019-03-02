@@ -8,3 +8,4 @@ class PigLatinizer
   def pig_latinize
 
   end
+end
