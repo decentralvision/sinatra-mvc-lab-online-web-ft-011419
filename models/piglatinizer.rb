@@ -12,5 +12,6 @@ class PigLatinizer
     else
       pig_latin = word[(first_syll_cons.size -1)..-1] + first_syll_cons + 'ay'
     end
+    pig_latin
   end
 end
