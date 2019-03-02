@@ -7,8 +7,6 @@ class PigLatinizer
 
   def piglatinize(word)
     first_syll_cons = word.downcase.scan(/\A[^aeiou]+/).first
-    binding.pry
-
     if first_syll_cons == nil
       pig_latin = word + 'way'
     else
