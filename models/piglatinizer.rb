@@ -9,7 +9,7 @@ class PigLatinizer
     first_syllable_consonant? = word.downcase.scan(/\A[^aeiou]+/).first
     if first_syllable_consonant? == nil
     else
-      pig_latin = word[0..first_syllable_consonant?.size] +first_consonant_syllable
+      pig_latin = word[0..(first_syllable_consonant?.size -1)] + first_consonant_syllable
     word[0].downcase ?  suffix = 'ay' : suffix = 'way'
 
   end
