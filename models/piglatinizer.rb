@@ -5,7 +5,7 @@ class PigLatinizer
     @words = :words.downcase
   end
 
-  def piglatinize
+  def piglatinize(word)
     binding.pry
     @words.split(' ')
   end
