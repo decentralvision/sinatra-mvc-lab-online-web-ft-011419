@@ -4,7 +4,7 @@ class App < Sinatra::Base
   get '/' do
     erb :user_input
   end
-  post '/pig' do
+  post '/pig_latin' do
     @params = params
     erb :pig_latin
   end
