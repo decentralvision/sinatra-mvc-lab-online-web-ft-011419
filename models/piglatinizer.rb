@@ -6,6 +6,6 @@ class PigLatinizer
   end
 
   def piglatinize
-
+    @words.split(' ')
   end
 end
