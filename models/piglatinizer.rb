@@ -7,7 +7,7 @@ class PigLatinizer
 
   def piglatinize(word)
     binding.pry
-    word[0].scan(/[aeiou]/) ? suffix = 'ay' : suffix = 'lay'
+    word[0].scan(/[aeiou]/).empty? ? suffix = 'ay' : suffix = 'lay'
     pig_latin = word[1..-1] + word[0] + suffix
   end
 end
