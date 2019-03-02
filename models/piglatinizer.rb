@@ -4,7 +4,7 @@ class PigLatinizer
 
     words.split(' ').collect! do |word|
 
-      first_syll_cons = word.downcase.scan(/\A[^aeiouAEIOU]+/).first
+      first_syll_cons = word.scan(/\A[^aeiouAEIOU]+/).first
       if first_syll_cons == nil
         pig_latin = word + 'way'
       else
