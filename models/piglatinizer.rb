@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    first_consonant_syllable = word.downcase.scan(/\A[^aeiou]+/).first
+    first_syllable_consonant? = word.downcase.scan(/\A[^aeiou]+/).first
     if first_consonant_syllable == nil
     else
       pig_latin = word +first_consonant_syllable.first
