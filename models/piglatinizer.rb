@@ -5,7 +5,7 @@ class PigLatinizer
     @words = :words.downcase
   end
 
-  def pig_latinize
+  def piglatinize
 
   end
 end
