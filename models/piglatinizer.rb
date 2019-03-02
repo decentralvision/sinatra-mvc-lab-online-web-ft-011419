@@ -6,7 +6,7 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    word[0] =~ /[aeiou]/ ? suffix = 'ay' : suffix = 'Lay'
+    word[0] =~ /[aeiou]/ ? suffix = 'ay' : suffix = 'lay'
     pig_latin = word[1..-1] + word[0] + suffix
   end
 end
