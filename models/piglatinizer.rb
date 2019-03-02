@@ -6,8 +6,9 @@ class PigLatinizer
   end
 
   def piglatinize(word)
+    word.scan(/\A[^aeiou]+/)
 
-    word[0].downcase.scan(/[aeiou]/).empty? ?  suffix = 'ay' : suffix = 'way'
-    pig_latin = word[1..-1] + word[0] + suffix
+    word[0].downcase ?  suffix = 'ay' : suffix = 'way'
+
   end
 end
