@@ -6,4 +6,5 @@ class PigLatinizer
   end
 
   def pig_latinize
+
   end
